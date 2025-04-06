@@ -1,0 +1,48 @@
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+  }
+
+  .container {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .main {
+    flex: 3;
+    background: #f4f4f4;
+    padding: 1em;
+  }
+
+  .sidebar {
+    flex: 1;
+    background: #ddd;
+    padding: 1em;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<nav>
+  <div>Logo</div>
+  <div>Menu</div>
+</nav>
+
+<div class="container">
+  <div class="main">Main Content</div>
+  <div class="sidebar">Sidebar</div>
+</div>
